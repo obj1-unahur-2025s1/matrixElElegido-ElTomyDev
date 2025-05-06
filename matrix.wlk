@@ -2,7 +2,7 @@ object nave {
     const pasajeros = []
     method cantidadPasajeros() = pasajeros.size()
     method mayorVitalidad() = pasajeros.max({p => p.vitalidad()})
-    method estaEquilibrada() = self.mayorVitalidad() < self.menorVitalidad()
+    method estaEquilibrada() = self.mayorVitalidad() < self.menorVitalidad()*2
     method menorVitalidad() = pasajeros.min({p => p.vitalidad()})
     method estaElElegido() = pasajeros.any({p => p.esElElegido()})
 
